@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JUMA CROCHÊ</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4ec;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        header {
+            background-color: #556b2f;
+            width: 100%;
+            padding: 1.5rem;
+            color: white;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 1rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 2rem;
+        }
+
+        section {
+            margin-bottom: 3rem;
+        }
+
+        footer {
+            background-color: #556b2f;
+            color: white;
+            width: 100%;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .hero {
+            background-color: #6b8e23;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .product-card {
+            background-color: #ffffff;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .product-card img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+
+        .product-card h3 {
+            font-size: 1.2rem;
+            margin: 0.5rem 0;
+        }
+
+        .product-card p {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .product-card .price {
+            font-weight: bold;
+            color: #556b2f;
+            margin-bottom: 1rem;
+        }
+
+        .btn-buy {
+            background-color: #556b2f;
+            color: white;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .btn-buy:hover {
+            background-color: #6b8e23;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>JUMA CROCHÊ</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <h2>Bem-vindo ao JUMA CROCHÊ</h2>
+            <p>Transformando linhas em arte com paixão e dedicação.</p>
+            <button class="btn-primary">Saiba Mais</button>
+        </section>
+
+        <section id="sobre">
+            <h2>Sobre</h2>
+            <p>No JUMA CROCHÊ, criamos peças únicas e artesanais com amor. Cada ponto é feito com a máxima atenção aos detalhes para oferecer produtos que encantam e aquecem o coração.</p>
+        </section>
+
+        <section id="produtos">
+            <h2>Produtos</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="blob:https://web.whatsapp.com/fef9a466-ea63-4c55-8004-55d4859cdd06" alt="Cachecol de crochê">
+                    <h3>Coração de Croch</h3>
+                    <p>Coração feito à mão com fios macios e confortáveis.</p>
+                    <p class="price">R$ 15,00</p>
+                    <a href="#" class="btn-buy">Comprar</a>
+                </div>
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/200" alt="Toalha de mesa">
+                    <h3>Toalha de Mesa</h3>
+                    <p>Toalha de mesa com acabamento delicado em crochê.</p>
+                    <p class="price">R$ 120,00</p>
+                    <a href="#" class="btn-buy">Comprar</a>
+                </div>
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/200" alt="Tapete de crochê">
+                    <h3>Tapete Redondo</h3>
+                    <p>Tapete decorativo perfeito para qualquer ambiente.</p>
+                    <p class="price">R$ 150,00</p>
+                    <a href="#" class="btn-buy">Comprar</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Entre em contato pelo e-mail: contato@jumacroche.com</p>
+            <button class="btn-primary">Enviar Mensagem</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 JUMA CROCHÊ. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
